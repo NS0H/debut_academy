@@ -1,0 +1,365 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+#m_menu {
+  display: none;
+
+  border: none;
+  background-color: #fff;
+}
+
+b {
+  font-weight: 800;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #135c93;
+  color: #fff;
+  font-family: KOHIBaeum;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5rem;
+  padding: 0.8rem;
+  cursor: pointer;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #fff;
+  color: #135c93;
+}
+
+nav {
+  display: flex;
+  padding: 1rem 12rem;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 20.5rem;
+  flex-wrap: wrap;
+
+  border-bottom: 1px solid #145c93;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+nav > div {
+  width: 27.0625rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+}
+
+.blank {
+  width: 10rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #145c93; /* 마우스 오버시 글자 색상 변경 */
+}
+
+#logo {
+  width: 12.4rem;
+  /* height: 3.75rem; */
+  flex-shrink: 0;
+}
+
+.menu {
+  color: #333;
+  font-family: Pretendard;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+    display: flex;
+    padding: 1rem 2rem;
+    justify-content: space-between;
+  }
+
+  nav > div {
+    display: none;
+  }
+
+  nav #m_menu {
+    display: inherit;
+  }
+}
+
+/* #login {
+    color: #000;
+    font-family: Pretendard;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
+    width: 6.5rem;
+    height: 1.8125rem;
+    flex-shrink: 0;
+  
+    border-radius: 0.90625rem;
+    border-color: #145c93;
+    background: #145c93;
+    border-style: solid;
+  }
+  
+  #login > span {
+    width: 2.8125rem;
+    color: #fff;
+    font-family: Pretendard;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  #login > img {
+    width: 1.06875rem;
+    flex-shrink: 0;
+  } */
+
+/* FOOTER */
+footer {
+  display: flex;
+  margin-top: 3rem;
+  padding: 2rem 16rem;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  row-gap: 20.5rem;
+  flex-wrap: wrap;
+
+  border-top: 1px solid #ddd;
+  background: #fff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+}
+
+footer > #logo {
+  width: 10.82694rem;
+  flex-shrink: 0;
+}
+
+footer > div {
+  color: #777;
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer > span > span {
+  color: #999;
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+footer > #glory {
+  width: 7.5525rem;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 1rem 2rem;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  footer > #logo {
+    width: 9rem;
+    padding-top: 1rem;
+  }
+
+  footer > div {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .blank {
+    display: none;
+  }
+}
+
+#mobiile-menu {
+  display: none;
+}
+
+#mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  border-radius: 0rem 0rem 0rem 1.25rem;
+  background-color: #fff;
+}
+
+#mobile-menu li {
+  position: relative;
+}
+
+#mobile-menu a {
+  width: 100%;
+  height: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  padding-left: 3rem;
+
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+#mobile-menu > ul > li {
+  width: 100%;
+  
+  border-top: 1px solid #ddd;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+#mobile-menu > ul > li > a {
+  color: #333;
+}
+
+#mobile-menu > ul > li > div {
+  position: absolute;
+  width: 4rem;
+  height: 2rem;
+  top: 0.3rem;
+  right: 1rem;
+}
+
+#mobile-menu > ul > li > div > img {
+  width: 1rem;
+  height: 0.5rem;
+}
+
+.submenu {
+  display: none;
+  position: relative;
+  top: 100%;
+  left: 0;
+}
+
+.submenu > li {
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.submenu > li > a {
+  color: #595959;
+}
+
+.sub-submenu {
+  position: relative;
+  top: 0;
+  /* left: 100%; */
+}
+
+.sub-submenu > li {
+  background-color: #e0e0e0;
+  border-bottom: 1px solid #c3c3c3;
+}
+
+.sub-submenu > li > a {
+  color: #767a7d;
+}
+
+#mobile-menu > ul > li:last-child > ul > li:last-child {
+  border-radius: 0rem 0rem 0rem 1.25rem;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile-menu {
+    display: none;
+    position: absolute;
+    top: 5.5rem;
+    right: 0;
+    width: 70%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,395 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+nav .menu:nth-child(3) {
+  color: #145c93;
+  border-bottom: 2px solid #145c93;
+}
+
+#mobile {
+  display: none;
+}
+
+#desktop {
+  display: inherit;
+}
+
+#m_main {
+  display: none;
+
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+  font-family: Pretendard;
+  font-size: 1.625rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+#sub {
+  width: 100rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+#sub > img:nth-child(1) {
+  width: 120rem;
+}
+
+.twin_tab {
+  background-color: #fff;
+}
+
+.twin_tab > .tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+}
+.twin_tab li {
+  width: 15.625rem;
+  height: 2.5625rem;
+  flex-shrink: 0;
+
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: normal;
+
+  background: none;
+  border: none;
+
+  position: relative;
+  top: -1rem;
+}
+
+.twin_tab li {
+  color: #404040;
+  font-weight: 500;
+}
+
+.twin_tab li.is_on {
+  border-bottom: 2px solid #145c93;
+}
+
+.twin_tab li.is_on > button {
+  color: #145c93;
+  font-weight: 800;
+}
+
+h4 {
+  color: #145c93;
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.cont_area {
+  margin: 10px auto;
+}
+.cont_area .cont {
+  display: none;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.cont_area .is_on {
+  display: inherit;
+}
+
+.cont_area .cont .curri {
+  display: flex;
+  width: 100rem;
+
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curri > div {
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+
+  margin: 1.5rem;
+}
+
+.curri > div > table {
+  width: 100rem;
+  height: 40rem;
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-weight: 700;
+  border-collapse: collapse;
+
+  margin: 3rem;
+}
+
+.curri > div > table th,
+td {
+  border: 1px solid #d6d6d7;
+}
+
+.curri > div > table tr > :nth-child(1) {
+  color: #888887;
+  font-weight: 800;
+  font-family: Pretendard;
+  border-left: none;
+  background-color: #f7f7f7;
+  width: 6rem;
+}
+
+.curri > div > table tr > :last-child {
+  border-right: none;
+}
+
+.curri > div > table tr th {
+  width: 5rem;
+  height: 3rem;
+
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  color: #fff;
+}
+
+.curri > div > table > thead > tr > th:first-child {
+  background-color: #fff;
+}
+
+.curri > div > table#ele_table tr th:nth-child(9) {
+  width: 6rem;
+}
+
+table#ele_table th:nth-child(2) {
+  background-color: #ebcf58;
+  color: #000;
+}
+
+table#ele_table th:nth-child(3) {
+  background-color: #dde15a;
+  color: #000;
+}
+
+table#ele_table th:nth-child(4) {
+  background-color: #e7a346;
+}
+
+table#ele_table th:nth-child(5) {
+  background-color: #dc7b3f;
+}
+
+table#ele_table th:nth-child(6) {
+  background-color: #d6605a;
+}
+
+table#ele_table th:nth-child(7) {
+  background-color: #ac442e;
+}
+
+table#ele_table th:nth-child(8) {
+  background-color: #854033;
+}
+
+table#ele_table th:nth-child(9) {
+  background-color: #533a28;
+}
+
+table#ele_table th:nth-child(10) {
+  background-color: #5d2f64;
+}
+
+table#ele_table th:nth-child(11) {
+  background-color: #5d3164;
+}
+
+table#mid_table th:nth-child(2) {
+  background-color: #9cc35d;
+}
+
+table#mid_table th:nth-child(3) {
+  background-color: #73b360;
+}
+
+table#mid_table th:nth-child(4) {
+  background-color: #5a8f74;
+}
+
+table#mid_table th:nth-child(5) {
+  background-color: #647b59;
+}
+
+table#mid_table th:nth-child(6) {
+  background-color: #4c899d;
+}
+
+table#mid_table th:nth-child(7) {
+  background-color: #3272a9;
+}
+
+table#mid_table th:nth-child(8) {
+  background-color: #204f89;
+}
+
+table#mid_table th:nth-child(9) {
+  background-color: #133461;
+}
+
+table#mid_table th:nth-child(10) {
+  background-color: #4d247d;
+}
+
+@media screen and (max-width: 768px) {
+  #mobile {
+    display: inherit;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #main_img {
+    display: none;
+  }
+
+  #sub {
+    width: 100%;
+  }
+
+  #sub #main {
+    background-image: url("../image/m_curriculum_main.jpg");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .twin_tab {
+    width: 80%;
+  }
+
+  ul {
+    padding-left: 0rem;
+  }
+
+  .twin_tab li {
+    width: 45%;
+
+    font-size: 1rem;
+  }
+
+  .cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cont_area {
+    margin: 0rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cont_area .cont .curri {
+    overflow: hidden;
+    width: 95%;
+  }
+
+  .curri > div {
+    font-size: 1rem;
+  }
+
+  .curri > div:last-child {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(221, 221, 221, 0.87);
+  }
+
+  .curri > div > table {
+    width: 100rem;
+    margin: 0.5rem;
+    touch-action: pan-y;
+  }
+}

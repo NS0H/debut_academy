@@ -1,0 +1,520 @@
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 500;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 700;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 800;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "KOHIBaeum";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot");
+  src: url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.eot?#iefix")
+      format("embedded-opentype"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff2")
+      format("woff2"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.woff")
+      format("woff"),
+    url("https://cdn.jsdelivr.net/gh/webfontworld/kohi/KOHIBaeum.ttf")
+      format("truetype");
+  font-display: swap;
+}
+
+/* SLIDE IMAGE */
+.outer {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+/* .inner-list {
+  display: flex;
+  flex-direction: row;
+  transition: transform 0.5s ease-in-out;
+} */
+
+.inner {
+  height: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.inner > div {
+  width: 120rem;
+  height: 40rem;
+  background-image: url("../image/visual/main_visual.jpg");
+  background-repeat: no-repeat;
+  background-size: 106% 106%;
+  transform: scale(1.06);
+
+  padding: 15rem;
+
+  display: block;
+  object-fit: contain;
+
+  animation: zoomIn 8s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1); /* 초기 크기: 100% */
+  }
+
+  100% {
+    transform: scale(1.06); /* 최종 크기: 100% */
+  }
+}
+
+.copy {
+  color: #fff;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
+  font-family: KOHIBaeum;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  padding: 0.5rem;
+
+  animation: fadeIn 5s ease-out, moveUp 5s ease-out;
+}
+
+.copy y {
+  color: #ffd12e;
+}
+
+.copy_small {
+  color: #fff;
+  text-shadow: 3px 4px 12px rgba(0, 0, 0, 0.25);
+  font-family: Pretendard;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  padding: 0.5rem;
+
+  animation: fadeIn 8s ease-out, moveUp 8s ease-in-out;
+}
+
+/* @keyframes zoomOut {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1);
+  }
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    transform: translateY(50%); /* 아래에서 위로 50px 이동 */
+    transition-timing-function: ease-in-out;
+  }
+  100% {
+    transform: translateY(0); /* 최종 위치는 이동하지 않은 상태 */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inner > div {
+    background-image: url("../image/visual/m_main_visual.jpg");
+    width: 100%;
+    height: auto;
+    padding: 10rem;
+    animation: none;
+  }
+
+  .copy,
+  .copy_small {
+    display: none;
+  }
+}
+
+/* .button-list {
+  position: relative;
+  top: -5rem;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.button-list > button {
+  background-color: #145c93;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+hr {
+  width: 4.4375rem;
+  height: 0.0625rem;
+  color: #fff;
+} */
+
+#big4,
+#banner,
+#twin_banner {
+  width: 100rem;
+  display: flex;
+  padding: 1.5rem 5.9375rem;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* BIG4 */
+#big4 > div {
+  width: 75rem;
+  height: 42rem;
+  background-image: url("../image/big4_wide.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+
+  display: inline-flex;
+  padding: 5rem 2rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+#big4 > div > div:nth-child(1) {
+  color: #333;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+#big4 > div > div:nth-child(2) {
+  color: #135c93;
+  text-align: center;
+  font-family: KOHIBaeum;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#big4 > div > div:nth-child(3) {
+  padding-top: 1rem;
+}
+
+.image_button {
+  width: 17rem;
+  height: 25rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.image_button img {
+  width: 15rem;
+  height: auto;
+}
+
+/* BANNER */
+#banner {
+  gap: 1rem;
+  flex-shrink: 0;
+  height: 20.5rem;
+}
+
+#banner > div {
+  width: 75rem;
+  height: 16.5rem;
+  background-image: url("../image/banner_source.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+
+  display: flex;
+  align-items: center;
+}
+
+#banner > div > div {
+  display: flex;
+  padding: 0rem 3.75rem;
+  flex-direction: column;
+
+  cursor: pointer;
+}
+
+#banner > div > div > div {
+  color: #fff;
+  font-family: Pretendard;
+  padding: 0.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#banner > div > div div:first-child {
+  font-size: 1rem;
+}
+
+#banner > div > div div:nth-child(2) {
+  font-size: 2rem;
+}
+
+#banner > div > div > button {
+  width: 5rem;
+  height: 2rem;
+  flex-shrink: 0;
+  margin: 0.2rem;
+
+  background: none;
+  border-radius: 1.09375rem;
+  border: 1px solid #fff;
+
+  color: #fff;
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* TWIN BANNER */
+#twin_banner {
+  flex-direction: row;
+  justify-content: center;
+  flex-shrink: 0;
+  gap: 0rem;
+
+  height: 13rem;
+}
+
+#twin_banner > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 38rem;
+  height: 10rem;
+}
+
+#twin_banner > div > div {
+  display: inline-flex;
+  width: 36.5rem;
+  height: 9rem;
+  padding: 0rem 2.5rem;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-shrink: 0;
+  justify-content: center;
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+}
+
+#element {
+  background-image: url("../image/ele_banner_src.png");
+}
+
+#middle {
+  background-image: url("../image/mid_banner_src.png");
+}
+
+#twin_banner > div > div > div > div {
+  color: #fff;
+  text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+  font-family: Pretendard;
+
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+#twin_banner > div > div > div > div:nth-child(2) {
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #big4,
+  #banner,
+  #twin_banner {
+    width: 100%;
+    padding: 0rem;
+  }
+
+  #big4 > div {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    background-image: url("../image/m_big4.png");
+  }
+
+  #big4 > div > div:nth-child(1) {
+    color: #333;
+    text-align: center;
+    font-family: Pretendard;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  #big4 > div > div:nth-child(2) {
+    color: #135c93;
+    text-align: center;
+    font-family: KOHIBaeum;
+    font-size: 250%;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  #big4 > div > div:nth-child(3) {
+    width: 95%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .image_button {
+    width: 10rem;
+    height: 12rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .image_button img {
+    width: 100%;
+    height: auto;
+
+    margin: 1%;
+  }
+
+  #banner {
+    gap: 1rem;
+    flex-shrink: 0;
+    height: 15rem;
+
+    margin: 1rem 0rem;
+  }
+
+  #banner > div {
+    background-image: url("../image/m_banner_source.png");
+    width: 95%;
+    justify-content: center;
+  }
+
+  #banner > div > div {
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+  }
+
+  #banner > div > div > div {
+    font-weight: 500;
+  }
+
+  #banner > div > div div:first-child {
+    font-size: 1rem;
+  }
+
+  #banner > div > div div:nth-child(2) {
+    font-size: 1.5rem;
+  }
+
+  #twin_banner {
+    flex-direction: column;
+    height: 18rem;
+  }
+
+  #twin_banner > div {
+    width: 100%;
+    height: 8rem;
+  }
+
+  #twin_banner > div > div {
+    width: 95%;
+    height: 7rem;
+
+    padding: 0rem 1rem;
+  }
+
+  #twin_banner > div > div > div > div {
+    font-size: 1.2rem;
+  }
+  #twin_banner > div > div > div > div:nth-child(2) {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}

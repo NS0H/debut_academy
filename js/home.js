@@ -43,7 +43,7 @@ function changeImage1(isHovered) {
       buttonImage.src = "./image/big01_over.png"; // 마우스 오버시 이미지 변경
       buttonImage.style.width = "16rem";
     } else {
-      buttonImage.src = "../image/big01.png"; // 마우스 아웃시 이미지 원래대로 변경
+      buttonImage.src = "./image/big01.png"; // 마우스 아웃시 이미지 원래대로 변경
       buttonImage.style.width = "15rem";
     }
   }
